@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 
 
 
-    printf("%f %d %d\n", sr, sr_dr, (int)sr);
+    //printf("%f %d %d\n", sr, sr_dr, (int)sr);
     if (nigga == 1) {
         printf("-%d.%d\n", (int)sr, sr_dr);
     } else {
