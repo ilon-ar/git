@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     while (sr_dr > 100)
     {
         if (sr_dr % 10 >= 5) {
-        sr_dr = (sr_dr / 10) + 1;
+        sr_dr = (sr_dr / 10) ;
     } else sr_dr /= 10;
     }
     
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 
 
 
-    // printf("%f %d %d\n", sr, sr_dr, (int)sr);
+    //printf("%f %d %d\n", sr, sr_dr, (int)sr);
     if (nigga == 1) {
         printf("-%d.%d\n", (int)sr, sr_dr);
     } else {
