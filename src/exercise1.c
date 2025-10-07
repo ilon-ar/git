@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     while (sr_dr > 100)
     {
         if (sr_dr % 10 >= 5) {
-        sr_dr = (sr_dr / 10) ;
+        sr_dr = (sr_dr / 10) + 1;
     } else sr_dr /= 10;
     }
     
