@@ -9,30 +9,7 @@ int main(int argc, char** argv) {
         sum += array[i];
     }
     sr = sum / 10.0;
-    int nigga = 0; 
-    if (sr < 0) {
-        sr *= (-1);
-        nigga = 1;
-    } 
-        int sr_dr = (sr - (int)sr) * 100000.0;
-
-    while (sr_dr > 100)
-    {
-        if (sr_dr % 10 >= 5) {
-        sr_dr = (sr_dr / 10) + 1;
-    } else sr_dr /= 10;
-    }
-    
-        
-
-
-
-    //printf("%f %d %d\n", sr, sr_dr, (int)sr);
-    if (nigga == 1) {
-        printf("-%d.%d\n", (int)sr, sr_dr);
-    } else {
-        printf("%d.%d\n", (int)sr, sr_dr);
-    }
+    printf("%.3lf \n", sr);
     
     return 0;
 }
