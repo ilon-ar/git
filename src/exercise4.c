@@ -21,32 +21,8 @@ int main(int argc, char** argv) {
         }
     
         for (i = 0; i < 10; ++i) {
-        float x = array_sdv[i];
-        if ((int)x == x) {
-            printf("%d ", (int)(x));
-        } else {
-            char neg = 0;
-            if (x < 0) {
-                neg = 1;
-                x *= (-1);
-            }
-            int ccc = (int)x;
-            int dcc = (x - ccc) * 1000;
-            if (dcc % 10 >= 5){
-                dcc = (dcc / 10) + 1;
-            } else dcc /= 10;
-            if (dcc % 10 == 0) {
-                dcc /= 10;
-            }
-
-            if (neg == 0) {
-                printf("%d.%d ", ccc, dcc);
-            }else if (neg == 1) {
-                printf("-%d.%d ", ccc, dcc);
-            }
+            printf("%.3lf ", array_sdv[i]);
         }
-
-    }
     printf("\n");
     return 0;
 
