@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     }
     for (int p = 0; p < 10; p++) {
         for (int r = 0; r < 10; r++) {
-            printf("%.3f", pr[p][r]);
+            printf("%.3f ", pr[p][r]);
         }
     }
     
