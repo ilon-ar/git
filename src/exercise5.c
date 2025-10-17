@@ -11,13 +11,11 @@ int main(int argc, char** argv) {
     for (i = 0; i < 10; ++i) {
         for (j = 0; j < 3; ++j) {
             scanf("%f", &A[i][j]);
-            printf("%d %d\n", i, j);
         }
     }
     for (i = 0; i < 3; ++i) {
         for (j = 0; j < 10; ++j) {
             scanf("%f", &B[i][j]);
-            printf("%d %d\n", i, j);
         }
     }
     for (int p = 0; p < 10; p++) {
