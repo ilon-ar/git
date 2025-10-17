@@ -43,7 +43,7 @@ compare_arrays() {
 
 # Тест 1: Вставка в начало
 echo "Тест 1: Массив: \"1 2 3 4 5 6 7 8 9 10\". Вставка в начало (K=0, X=99)"
-result=$(echo "1 2 3 4 6 6 7 8 9 10" | "$PROGRAM" 99 0)
+result=$(echo "1 2 3 4 5 6 7 8 9 10" | "$PROGRAM" 99 0)
 expected=("99" "1" "2" "3" "4" "5" "6" "7" "8" "9")
 if compare_arrays $result "${expected[@]}"; then
     echo "✓ PASS: Ожидалось [${expected[@]}], Получено [$result]"

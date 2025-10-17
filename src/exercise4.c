@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
         }
     
         for (i = 0; i < 10; ++i) {
-            printf("%.3lf ", array_sdv[i]);
+            printf("%.2lf ", array_sdv[i]);
         }
     printf("\n");
     return 0;
