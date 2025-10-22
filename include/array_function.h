@@ -1,4 +1,4 @@
-#ifndef ARRAY_FUNCTION_H
+    #ifndef ARRAY_FUNCTION_H
 #define ARRAY_FUNCTION_H
 
 #include <stdio.h>
