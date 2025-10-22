@@ -35,5 +35,16 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
     }
 }
 
-void get_min_and_max_from_int_array(int* src, size_t size, int* min, int* max) {}
+void get_min_and_max_from_int_array(int* src, size_t size, int* min, int* max) {
+    *max = -9999999;
+    *min = 9999999;
+    for (int i = 0; i < size; i++) {
+        if (src[i] > *max) {
+            *max = src[i];
+        }
+        if (src[i] < *min) {
+            *min = src[i];
+        }
+    }
+}
 
